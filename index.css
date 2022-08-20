@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto';
     background-color: #222428;
     margin: 0;
+    vertical-align: baseline;
 }
 
 .separator-parent {
@@ -125,5 +126,11 @@ ul li a {
     #main {
         display: block;
         padding: 20px;
-    }    
+        margin-bottom: 50px;
+    }
+    
+    .info-wrapper {
+        margin-left: 10px;
+        padding-bottom: 50px;
+    }
 }
