@@ -132,5 +132,21 @@ ul li a {
     .info-wrapper {
         margin-left: 10px;
         padding-bottom: 50px;
+        width: auto;
+    }
+
+    .photo-wrapper {
+        position: relative;
+        padding: 10px;
+        height: 340px;
+        width: 300px;
+        background-color: #22262a;
+        border-radius: 6px;
+        box-shadow: 10px 10px 19px #1c1e22,
+        -10px -10px 19px #262a2e;
+    }
+
+    .info-wrapper h1 {
+        font-size: 35px;
     }
 }
