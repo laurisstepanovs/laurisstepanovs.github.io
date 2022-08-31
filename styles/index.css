@@ -5,8 +5,26 @@ body {
     vertical-align: baseline;
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
 .separator-parent {
     overflow: auto;
+}
+
+.logo {
+    line-height: 1.2;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 20;
+    margin-left: -91.13px;
+    text-shadow: 0 0 20px #ff014f;
 }
 
 .separator {
@@ -20,7 +38,8 @@ body {
 
 #main {
     width: 100%;
-    height: 100%;
+    margin-top: 250px;
+    margin-bottom: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +57,7 @@ body {
 }
 
 .photo-wrapper div {
-    background-image: url(avatar2.jpg);
+    background-image: url(../media/avatar2.jpg);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;

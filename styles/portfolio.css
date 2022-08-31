@@ -1,0 +1,79 @@
+#partfolio {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    display: block;
+}
+
+.section-title span.subtitle {
+    color: #f9004d;
+    letter-spacing: 1px;
+    display: block;
+    line-height: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.section-title h2.title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #c4cfde;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    text-align: left;
+    display: block;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22,
+    -10px -10px 19px #262a2e;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s all ease-in-out;
+    display: inline-block;
+    margin: 10px;
+}
+
+.cards h4 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #c4cfde;
+}
+
+.cards p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #c4cfde;
+    margin-bottom: 0px;
+}
+
+.thumbnail img {
+    max-width: 400px;
+    max-height: 300px;
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio-cards {
+    display: gird;
+
+}
+
+
+
