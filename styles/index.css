@@ -3,6 +3,7 @@ body {
     background-color: #222428;
     margin: 0;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 a {
@@ -36,13 +37,23 @@ a {
     background-color: black;
 }
 
-#main {
+#particles-js {
     width: 100%;
-    margin-top: 250px;
-    margin-bottom: 250px;
+    height: 100%;
+    position: relative;
+}
+
+.portfolio-card {
+    position: absolute;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    border-radius: 20px;
+    box-shadow: 10px 10px 19px #1c1e22,
+    -10px -10px 19px #262a2e;
+    padding: 30px;
 }
 
 .photo-wrapper {
@@ -141,7 +152,47 @@ ul li a {
     position: relative;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #particles-js {
+        display: block;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .info-wrapper {
+        margin-left: 10px;
+        padding-bottom: 50px;
+        width: auto;
+    }
+
+    .photo-wrapper {
+        position: relative;
+        padding: 10px;
+        height: 340px;
+        width: 300px;
+        background-color: #22262a;
+        border-radius: 6px;
+        box-shadow: 10px 10px 19px #1c1e22,
+        -10px -10px 19px #262a2e;
+    }
+
+    .info-wrapper h1 {
+        font-size: 35px;
+    }
+
+    .cards {
+        background-color: red;
+        display: block;
+        width: 100%;
+    }
+
+    .card .thumbnail img {
+        max-width: 800px;
+        width: 800px
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     #main {
         display: block;
         padding: 20px;
