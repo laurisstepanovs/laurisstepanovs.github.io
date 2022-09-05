@@ -1,0 +1,20 @@
+#toTop {
+    margin: 5px;
+    color: aqua;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 48px;
+  }
+  
+  #toTop {
+    transition: all 0.5s ease 0s;
+    opacity: 0.5;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #toTop:hover {
+    opacity: 1;
+  }
