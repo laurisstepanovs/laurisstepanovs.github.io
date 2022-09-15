@@ -27,6 +27,11 @@ function sendMail() {
   })
     .then((response) => {
       console.log(response);
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("budget").value = "";
+      document.getElementById("description").value = "";
+      alert("Email has been successfully sent!");
     })
     .catch((error) => {
       console.error('Error:', error);
