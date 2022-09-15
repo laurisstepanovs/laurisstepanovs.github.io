@@ -9,6 +9,7 @@ app.use(bodyParser.json());
 var port = 3000;
 
 app.post('/send-email', function (req, res) {
+  console.log("Asdfasdf");
     var transporter = nodeMailer.createTransport({
         host: "smtp.gmail.com",
         port: 465,
