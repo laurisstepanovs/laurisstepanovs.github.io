@@ -13,7 +13,7 @@ function sendMail() {
     description: document.getElementById("description").value,
 };
 
-  fetch('http://localhost:3000/send-email', {
+  fetch('https://personal-partfolio.herokuapp.com/send-email', {
     method: 'POST',
         mode: 'no-cors',
         cache: 'no-cache',
