@@ -6,7 +6,7 @@ bodyParser = require('body-parser');
 var app = express();
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json()); 
-var port = 3000;
+var port = process.env.PORT || 8000;
 
 app.post('/send-email', function (req, res) {
   console.log("Asdfasdf");
