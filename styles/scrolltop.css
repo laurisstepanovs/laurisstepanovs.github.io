@@ -1,18 +1,29 @@
 #toTop {
-    margin: 5px;
-    color: aqua;
-    display: block;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 48px;
+    bottom: 50px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    border-radius: 50%;
+    background-color: #212428;
+    text-align: center;
+    z-index: 999 !important;
+    box-shadow: 10px 10px 19px #1c1e22,
+    -10px -10px 19px #262a2e;
+    transition: all 0.5s ease 0s;
+    display: none;
+    align-items: center;
+    justify-content: center;
   }
   
-  #toTop {
-    transition: all 0.5s ease 0s;
-    opacity: 0.5;
-    display: none;
-    cursor: pointer;
+  #toTop i {
+    font-size: 20px !important;
+    color: #E4E6EA;
+    position: relative;
+    z-index: 1;
   }
   
   #toTop:hover {

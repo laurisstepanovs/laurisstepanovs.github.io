@@ -1,9 +1,16 @@
+const form = document.getElementById("hireMeForm");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  sendMail()
+});
+
 function sendMail() {
   const data = {
-    name:"Epxi1231323 Epix",
-    email:"epix5@inbox.lv",
-    badget:"less than 100$123123",
-    description:"want to order development123123123"
+    name: document.getElementById("name").value,
+    email:document.getElementById("email").value,
+    badget: document.getElementById("budget").value,
+    description: document.getElementById("description").value,
 };
 
   fetch('http://localhost:3000/send-email', {

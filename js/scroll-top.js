@@ -2,7 +2,7 @@ window.onscroll = scroll1;
 
 function scroll1() {
   var toTop = document.getElementById('toTop');
-  window.scrollY > 0 ? toTop.style.display = 'block' : toTop.style.display = 'none';
+  window.scrollY > 0 ? toTop.style.display = 'flex' : toTop.style.display = 'none';
 }
 
 function scrollTop() {
