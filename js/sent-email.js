@@ -1,30 +1,27 @@
 function sendMail() {
-    alert("Asdf");
-    const myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-    myHeaders.append("Access-Control-Allow-Origin", "*");
-    myHeaders.append('Authorization', "Basic afc584051fa3ede2bc7c772080781feb:00eb73ebdb30bc827f87cce66a3708d1");
-  
-    const data = JSON.stringify({
-      "Messages": [{
-        "From": {"Email": "epix5@inbox.lv", "Name": "Epix"},
-        "To": [{"Email": "la.stepanovs@gmail.com", "Name": "Lauris"}],
-        "Subject": "Order",
-        "TextPart": "message"
-      }]
-    });
-  
-    const requestOptions = {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: myHeaders,
-      body: data,
-    };
-  
-    fetch("https://api.mailjet.com/v3.1/send", requestOptions)
-      .then(response => response.text())
-      .then(result => console.log(result))
-      .catch(error => console.log('error', error));
+  const data = {
+    name:"Epxi1231323 Epix",
+    email:"epix5@inbox.lv",
+    badget:"less than 100$123123",
+    description:"want to order development123123123"
+};
 
-      alert();
+  fetch('http://localhost:3000/send-email', {
+    method: 'POST',
+        mode: 'no-cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Connection': 'keep-alive',
+            'Accept': '*/*',
+        },
+        body: new URLSearchParams(data),
+  })
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
 }
