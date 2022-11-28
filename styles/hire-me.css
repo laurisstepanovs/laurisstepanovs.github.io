@@ -5,7 +5,7 @@
 .hire-me-card {
     margin-right: auto;
     margin-left: auto;
-    width: 30%;
+    width: 35%;
     padding: 10px;
     text-align: left;
     padding: 15px;
@@ -126,4 +126,28 @@ button svg {
     line-height: 28px;
     color: #c4cfde;
     margin-bottom: 20px;
+}
+
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1440px) {
+    .hire-me-card {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .hire-me-card {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-device-width : 425px) and (max-device-width : 768px) {
+    .hire-me-card {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .hire-me-card {
+        width: 80%;
+    }
 }
