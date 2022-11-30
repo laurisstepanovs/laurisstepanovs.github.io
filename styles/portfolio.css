@@ -1,4 +1,7 @@
 #partfolio {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     display: block;
     margin-bottom: 40px;
