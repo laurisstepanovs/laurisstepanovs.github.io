@@ -35,6 +35,10 @@ app.post('/send-email', function (req, res) {
         }
       });
 });
+
+app.get('/send-email', function (req, res) {
+  return "Page works"
+});
       
 app.listen(port, function(){
     console.log('Server is running at port: ',port);
