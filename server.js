@@ -36,7 +36,7 @@ app.post('/send-email', function (req, res) {
       });
 });
 
-app.get('/send-email', function (req, res) {
+app.get('/', function (req, res) {
   return "Page works"
 });
       
